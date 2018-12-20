@@ -1,0 +1,242 @@
+<HTML>
+<HEAD>
+ <TITLE>boxes</TITLE>
+
+<STYLE type='text/css'>
+
+
+#christmastree{
+      position:absolute;
+      left:650px;
+      z-index:2;
+          }
+
+  #star-six {
+      top:40;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid gold;
+      position: relative;
+      transform:scale(0.5);
+
+    }
+    #star-six:after {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid gold;
+      position: absolute;
+      content: "";
+      top: 30px;
+      left: -50px;
+      transform:scale(1);
+    }
+
+ #triangle1 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+    }
+
+ #triangle2 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+      transform:scale(1.8);
+    }
+
+ #triangle3 {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid green;
+      transform:scale(2.4);
+    }
+
+#square{
+          width:70px;
+          height:60px;
+          background-color:#9C640C;
+          position:relative;
+          top:70px;
+      }
+
+  #gift1 {
+      width: 90px;
+      height: 90px;
+      background: #F4D03F;
+      position:relative;
+      left:200;
+    }
+
+  #cross {
+      background: red;
+      height: 100px;
+      position: relative;
+      width: 20px;
+      top:-95px;
+      left:200px;
+      transform:scale(0.9);
+    }
+    #cross:after {
+      background: red;
+      content: "";
+      height: 20px;
+      left: -40px;
+      position: absolute;
+      top: 40px;
+      width: 100px;
+    }
+  
+  #ornament {
+      position: absolute;
+      left: 650px;
+      top: 500px;
+      z-index:2;
+    }
+      #circle {
+      width: 25px;
+      height: 25px;
+      background-color: #C0392B;
+      border-radius: 50%
+    }
+
+  #ornament1 {
+      position: absolute;
+      left: 700px;
+      top: 400px;
+      z-index:2;
+    }
+      #circle1 {
+      width: 25px;
+      height: 25px;
+      background-color: #C0392B;
+      border-radius: 50%
+    }
+
+  #ornament2 {
+      position: absolute;
+      left: 670px;
+      top: 300px;
+      z-index:2;
+    }
+      #circle2 {
+      width: 25px;
+      height: 25px;
+      background-color: #CB4335;
+      border-radius: 50%
+    }
+
+      #infinity {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+      top:400px;
+      left:180px;
+      transform:scale(0.3);
+      z-index:3;
+
+    }
+    #infinity:before,
+    #infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border: 20px solid red;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+    #infinity:after {
+      left: auto;
+      right: 0;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+
+          #infinity1 {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+      top:400px;
+      left:180px;
+      transform:scale(0.3);
+      z-index:3;
+
+    }
+    #infinity:before,
+    #infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border: 20px solid red;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+    #infinity:after {
+      left: auto;
+      right: 0;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+  
+  
+</STYLE>
+
+</HEAD>
+<BODY bgcolor='#F5EEF8'>
+<CENTER><SPAN style = "font-size: 80px; font-family: 'SignPainter' ;color:#A93226"> Merry Christmas</SPAN></CENTER>
+<CENTER>
+<DIV id= 'christmastree'>
+  <DIV id='star-six'></DIV>
+
+  <DIV id='triangle1'></DIV>
+
+  <DIV id='triangle2'></DIV>
+
+  <DIV id='triangle3'></DIV>
+
+  <DIV id='square'></DIV> 
+
+  <DIV id='gift1'></DIV>
+
+  <DIV id='cross'></DIV>
+
+</DIV>
+<DIV id=ornament>
+ <DIV id='circle'></DIV>
+ </DIV>
+<DIV id=ornament1>
+ <DIV id='circle1'></DIV>
+</DIV>
+<DIV id=ornament2>
+ <DIV id='circle2'></DIV>
+</DIV>
+
+<DIV id=infinity></DIV>
+
+
+<DIV id=infinity1></DIV>
+</CENTER>
+
+</CENTER>
+
+</BODY>
+</HTML>
